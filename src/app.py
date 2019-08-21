@@ -1,13 +1,13 @@
 from flask import Flask, jsonify
 
 app = Flask(__name__)
-app.config['JSON_AS_ASCII'] = False
+app.config["JSON_AS_ASCII"] = False
 
-@app.route('/')
+
+@app.route("/")
 def index():
-  return jsonify({
-    "message": "テスト!!"
-  })
+    return jsonify({"message": "テスト!!"})
 
-if __name__ == '__main__':
-  app.run(debug=True)
+
+if __name__ == "__main__":
+    app.run(debug=True)
